@@ -8,12 +8,12 @@ const Card = (props) => {
       <div className="card">
         <div>
           <div className="top">
-          <img src="https://1000logos.net/wp-content/uploads/2016/10/Amazon-logo-meaning.jpg" alt="" />
+          <img src={props.logo} alt="" />
           <button>Save <Bookmark size={12}/></button>
         </div>
 
         <div className="center">
-          <h3>{props.company} <span>5 days ago</span></h3>
+          <h3>{props.company} <span>{props.datepost}</span></h3>
           <h2>{props.post}</h2>
           <div className='tag'>
             <h4>{props.one}</h4>
